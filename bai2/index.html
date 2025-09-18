@@ -1,11 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 2</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+  <div class="container">
+    <div class="header">
+      <div>
+        <img src="./img/hd.png" alt="">
+      </div>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Tìm Tour</a></li>
+          <li>
+            <a href="#">Dịch vụ</a>
+            <ul class="nav-submenu">
+              <li>Đặt phòng</li>
+              <li>Đặt vé máy bay</li>
+            </ul>
+          </li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+        <div class="nav-search">
+          <input type="text" placeholder="Tìm kiếm">
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="main-content">
+        <h2 class="main-title">Giới thiệu</h2>
+        <div class="main-text">
+          <p>Chào mừng bạn đến với trang web của chúng tôi. Chúng tôi cung cấp các dịch vụ du lịch tốt nhất cho bạn. Hãy
+            đến với chúng tôi để có những trải nghiệm tuyệt vời nhất.</p>
+        </div>
+
+        <div class="tour-card">
+          <img src="./img/inf1.jpg" alt="">
+          <div class="tour-info">
+            <h3>Tour Bali 4N3D: Khám phá BALI</h3>
+            <p>Giá tour chọn gói: 9.990.000 VNĐ</p>
+            <ul style="list-style-type: none;">
+              <li>-Khởi hành từ: Hồ Chí Minh</li>
+              <li>-Điểm đến: Bali</li>
+              <li>-Lịch trình: 4 ngày 3 đêm</li>
+              <li>-Phương tiện: Máy bay</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tour-card">
+          <img src="./img/inf2.jpg" alt="">
+          <div class="tour-info">
+            <h3>Tour Hàn Quốc mùa thu 5N4D</h3>
+            <p>Giá tour chọn gói: 16.990.000 VNĐ</p>
+            <ul style="list-style-type: none;">
+              <li>-Khởi hành từ: Hồ Chí Minh</li>
+              <li>-Điểm đến: Hàn Quốc</li>
+              <li>-Lịch trình: 5 ngày 4 đêm</li>
+              <li>-Phương tiện: Máy bay</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-form-wrap">
+        <div class="order-form-box">
+          <h2>Thông tin đặt tour</h2>
+          <form action="" class="order-form">
+            <div>
+              <label for="">Họ tên:</label>
+              <input type="text">
+            </div>
+            <div>
+              <label for="">Điện thoại:</label>
+              <input type="text">
+            </div>
+            <div>
+              <label for="">Email:</label>
+              <input type="text">
+            </div>
+            <div>
+              <label for="">Số người lớn: </label>
+              <input type="text" class="input-number">
+              <label for="">Số trẻ em: </label>
+              <input type="text" class="input-number">
+            </div>
+            <div>
+              <label for="">Thanh toán:</label>
+              <select>
+                <option>Tiền mặt</option>
+                <option>Chuyển khoản</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <label for="">Các yêu cầu đặc biệt</label>
+              <textarea cols="30" rows="10" style="height: 70px;"></textarea>
+            </div>
+            <br>
+            <div class="order-actions">
+              <button class="btn-order">Đặt tour</button>
+              <button class="btn-cancel">Hủy đặt tour</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <p> Họ tên sinh viên: Nguyễn Tiến Dũng</p>
+        <p> Mã sinh viên: 23650821</p>
+        <p> Mã lớp: DHKHDL19A</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

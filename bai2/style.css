@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background-color: #f5fdf7;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu {
+    background-color: #4CAF50;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    gap: 5px;
+}
+
+.nav-list li {
+    list-style: none;
+    height: 50px;
+    width: 150px;
+    background-color: #66BB6A;
+    border-radius: 8px;
+}
+.nav-list li:hover{
+    background-color: #A5D6A7;
+}
+.nav-list a:hover{
+    font-weight: 600;
+    color: #1B5E20;
+}
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    display: flex;
+}
+
+input,
+button {
+    height: 25px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+}
+
+.nav-search {
+    padding-right: 10px;
+}
+
+.nav-list>li {
+    position: relative;
+}
+.nav-submenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    background-color: #66BB6A;
+    border-radius: 8px;
+}
+.nav-submenu li {
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #66BB6A;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+}
+.nav-list>li:hover .nav-submenu {
+    display: block;
+}
+
+.body {
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+.main-content {
+    background-color: #ffffff;
+    width: 65%;
+    padding: 10px;
+}
+
+.main-title {
+    color: #2E7D32;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.main-text {
+    width: 90%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.1);
+    background-color: #fafafa;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.tour-card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+}
+
+.tour-card img {
+    width: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.order-form-wrap {
+    width: 35%;
+    background: #E8F5E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding: 10px;
+    color: #2E7D32;
+}
+.order-form-box {
+    height: 90%;
+    width: 90%;
+    border: 1px solid #ddd;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.order-form div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-form label {
+    width: 100px;
+    text-align: left;
+    color: #444;
+}
+
+.order-form input,
+select,
+textarea {
+    flex: 1;
+    height: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    height: 30px;
+}
+
+.order-form .input-number {
+    width: 50px;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-order {
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-order:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+}
+.btn-cancel {
+    width: 100px;
+    height: 30px;
+    background-color: #9E9E9E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-cancel:hover {
+    background-color: #757575;
+    transform: translateY(-2px);
+}
+
+.footer {
+    background-color: #4CAF50;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
